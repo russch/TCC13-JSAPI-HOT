@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>TCC 2013: JavaScript API Hands-on Lab</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="css/tutorial.css" rel="stylesheet" media="screen">
+	<link href="css/snap.css" rel="stylesheet" media="screen">
+	<link href="css/jquery.toast.min.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.10.3.min.js"></script>
+	<script type="text/javascript" src="http://localhost/javascripts/api/tableau_v8.debug.js"></script> 
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/snap.js"></script>
+	<script type="text/javascript" src="lib/tutorial.js"></script>
+	<script type="text/javascript" src="lib/jquery.toast.min.js"></script>
+</head>
+<body>
+	<!--<div class='container'>-->
+		<div class='row'>
+			<h1 class='pagination-centered'><b>Google Analytics Portal<b></h1>
+		</div>
+		<div class='row'>
+			<div class='pagination-centered'>
+				<div class='btn-group'>
+					<a class='btn' id="tree-map-btn"><img src="img/TreeMapThumb.jpg" /></a>
+					<a class='btn' id="dashboard-btn"><img src="img/bigmapThumb.png" /></a>
+					<a class='btn' id="scatter-btn"><img src="img/ScatterThumb.gif" /></a>
+					<!-- <a class='btn' id="advanced-btn"><img src="img/Advanced.jpg" /></a> -->
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+
+			<!-- All of our work will happen here -->
+			<div class="snap-drawers">
+				<div class="snap-drawer snap-drawer-left">
+					<!-- Map -->
+					<div id = "mapDiv">
+					<!-- This is filled in w/ jQuery in the loadUI() function -->
+					</div>
+					<br>
+							<!-- Sliders -->
+					<div id = 'slider-list'>
+						<div>
+							<div class = 'slider' id='slider-range-duration'></div>
+							<p id='duration-amount'></p>
+						</div>
+						<div>
+							<div class = 'slider' id='slider-range-visits'></div>
+							<p id='visits-amount'></p>
+						</div>
+						<div>
+							<div class = 'slider' id='slider-range-bounces'></div>
+							<p id='bounces-amount'></p>
+						</div>
+					</div>
+					<!-- End Sliders -->
+					<!-- Calendars -->
+					<div>
+						<div id='datepicker-start' class = 'calendar'></div>
+						<div id='datepicker-end' class = 'calendar'></div>
+					</div>
+					<!-- End Calendars -->
+					<!-- Combo Boxes -->
+					<div id = 'param-list'>
+						<div id='show-label'></div>
+						<div id='which-label'></div>
+					</div>
+					<!-- End Boxes -->
+					
+				</div>
+			</div>
+			
+			<div id="content" class="snap-content">
+				<a href="#" id="open-left"><img src='img/FilterShelfSlider.jpg'></a>
+				<div id='visualization'></div>
+			</div>
+			
+
+			<!-- This is the end of the section where we will do our work. -->
+
+		</div>
+	<!--</div>-->
+</body>
+</html>

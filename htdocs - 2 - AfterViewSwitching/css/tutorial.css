@@ -1,0 +1,42 @@
+div.ui-datepicker{
+ font-size:7px;
+}
+
+#slider-list {
+	display:inline;
+	list-style-type:none;
+	margin: 0 35px;
+}
+
+#slider-list > div {
+	display: inline-block;
+}
+
+.slider{
+	margin: 0 auto;
+}
+
+.slider + p {
+	padding: 10px 5px;
+}
+
+#map-filter {
+	margin: 0 30px;
+}
+
+p {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.calendar {
+	display:inline-block; 
+	text-align: center;
+}
+
+#open-left {
+	float: left;
+}
+
+#param-list {
+	margin: 20px 0;
+}
